@@ -102,7 +102,7 @@ const ConsentAwareWrapper = ({
     const classNames: string[] = [DEFAULT_WRAPPER_CLASS];
 
     if (useDefaultStyles === undefined || useDefaultStyles === true) {
-      classNames.push(styles.wrapper);
+      classNames.push(styles.wrapper as string);
     }
 
     if (className !== undefined && className.length > 0) {
